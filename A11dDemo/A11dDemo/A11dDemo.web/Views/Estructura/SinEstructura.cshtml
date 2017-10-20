@@ -1,0 +1,42 @@
+﻿@{
+	ViewBag.Title = "Sin estructura";
+	Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title - Front Fest Demo Accesibilidad</title>
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+	<div class="container body-content">
+
+		<div class="h1"><a href="@Url.Action(MVC.Home.Index())">Front Fest Demo Accesibilidad</a></div>
+		<div class="jumbotron">
+			<div class="h2">¿Por qué esto no está bien?</div>
+			<p class="text-justify text-info">No se usan encabezados de verdad</p>
+			<div class="h2">¿Y qué debería hacer?</div>
+			<p class="text-justify text-warning">¡Pues usarlos, que para eso están!</p>
+			<div class="h2">Menú</div>
+			<div class="list-group">
+				<p class="list-group-item"><a href="http://www.first.com">Primer ítem</a></p>
+				<p class="list-group-item"><a href="http://www.second.com">Segundo ítem</a></p>
+				<p class="list-group-item"><a href="http://www.third.com">Tercer ítem</a></p>
+			</div>
+		</div>
+		<hr />
+		<footer>
+			<p>&copy; @DateTime.Now.Year - Front Fest Demo Accesibilidad</p>
+		</footer>
+	</div>
+
+
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+
+
+</body>
+</html>

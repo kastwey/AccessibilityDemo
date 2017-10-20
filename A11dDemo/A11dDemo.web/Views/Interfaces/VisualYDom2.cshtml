@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = Resources.Interfaz.VerYEscucharRevival;
+}
+
+<h2>@Resources.Interfaz.VerYEscucharRevival</h2>
+<p class="c__flex">
+	<span class="c__flex__item">@Resources.Interfaz.Desordenado1</span>
+	<span class="c__flex__item">@Resources.Interfaz.Desordenado2</span>
+	<span class="c__flex__item">@Resources.Interfaz.Desordenado3</span>
+	<span class="c__flex__item">@Resources.Interfaz.Desordenado4</span>
+	<span class="c__flex__item">@Resources.Interfaz.Desordenado5</span>
+	<span class="c__flex__item">@Resources.Interfaz.Desordenado6</span>
+</p>
+
+@section styles
+{
+<style>
+	/*The flex-direction property specifies the direction of the flexible items.*/
+	/*The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).*/
+	.c__flex {
+		display: flex;
+		flex-flow: row-reverse;
+		justify-content: end;
+	}
+
+	.c__flex__item {
+		margin-right: .3rem;
+	}
+</style>
+
+}

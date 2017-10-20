@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Lo que se ve no es lo que se escucha (revival)";
+}
+
+<h2>Lo que se ve no es lo que se escucha (revival)</h2>
+<p class="c__flex">
+	<span class="c__flex__item">Lo que </span>
+	<span class="c__flex__item">intento demostrar </span>
+	<span class="c__flex__item">es que el </span>
+	<span class="c__flex__item">DOM y el flujo visual de </span>
+	<span class="c__flex__item">una web no </span>
+	<span class="c__flex__item">están relacionados. </span>
+</p>
+
+@section styles
+{
+<style>
+	/*The flex-direction property specifies the direction of the flexible items.*/
+	/*The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).*/
+	.c__flex {
+		display: flex;
+		flex-flow: row-reverse;
+		justify-content: end;
+	}
+
+	.c__flex__item {
+		margin-right: .3rem;
+	}
+</style>
+
+}

@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = Resources.Forms.FormNoAccesible;
+}
+<div class="jumbotron">
+    <h2>@Resources.Forms.FormNoAccesible</h2>
+    <div class="form-group">
+        <div class="alert alert-danger" id="divFormMalError">
+            <p>@Resources.Forms.RevisarErrores</p>
+            <ul>
+                <li>@Resources.Forms.NombreObligatorio</li>
+                <li>@Resources.Forms.ApellidosObligatorios</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <span><strong>@Resources.Forms.LblNombre</strong></span>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" value="Juanjo" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <span><strong>@Resources.Forms.LblApellidos</strong></span>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" value="" />
+            </div>
+        </div>
+        <div class="form-group">
+            <h3>@Resources.Forms.RangoEdad</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="radio" name="edad" id="edad1" />
+                </div>
+
+                <div class="col-md-9" style="margin-bottom:5px;"><span><strong>@Resources.Forms.DiezVeinte</strong></span></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="radio" name="edad" id="edad2" />
+                </div>
+
+                <div class="col-md-9" style="margin-bottom:5px;"><span><strong>@Resources.Forms.VeinteTreinta</strong></span></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="radio" name="edad" id="edad3" />
+                </div>
+
+                <div class="col-md-9" style="margin-bottom:5px;"><span><strong>@Resources.Forms.TreintaCuarenta</strong></span></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-offset-6">
+                <button class="btn btn-primary" id="btnSubmit">@Resources.Forms.Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts
+{
+    @Scripts.Render("~/Scripts/forms-mal.js")
+}

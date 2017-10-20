@@ -1,0 +1,69 @@
+﻿@{
+	ViewBag.Title = "Formulario accesible";
+}
+<div class="jumbotron">
+	<h2>Formulario:</h2>
+	<div class="form-group">
+		<div class="alert alert-danger" id="divFormMalError">
+			<h3><span role="status">Revisa los siguientes errores:</span></h3>
+			<ul>
+				<li>El nombre es obligatorio</li>
+				<li>Los apellidos son obligatorios.</li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<label for="txtNombre" class="label">Nombre:</label>
+			</div>
+			<div class="col-md-6">
+				<input type="text" class="form-control glyphicon-asterisk" id="txtNombre" value="Juanjo" aria-required="true" required />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<label for="txtApellidos" class="label">Apellidos:</label>
+			</div>
+			<div class="col-md-6">
+				<input type="text" class="form-control glyphicon-asterisk" id="txtApellidos" aria-required="true" required />
+			</div>
+		</div>
+		<div class="form-group" role="radiogroup" aria-labelledby="groupEdad">
+			<h3 id="groupEdad">Rango de edad:</h3>
+			<div class="row">
+				<div class="col-md-3">
+					<input type="radio" name="edad" id="edad1" />
+				</div>
+				<div class="col-md-9"><label class="label" for="edad1">Entre 10 y 20</label></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<input type="radio" name="edad" id="edad2" />
+				</div>
+
+				<div class="col-md-9"><label class="label" for="edad2">entre 20 y 30</label></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<input type="radio" name="edad" id="edad3" />
+				</div>
+
+				<div class="col-md-9"><label class="label" for="edad3">Entre 30 y 40</span></div>
+			</div>
+
+
+
+
+
+		</div>
+		<div class="row">
+			<div class="col-md-offset-6">
+				<button class="btn btn-primary" id="btnSubmit">Enviar</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+@section Scripts
+{
+@Scripts.Render("~/Scripts/forms-bien.js")
+}

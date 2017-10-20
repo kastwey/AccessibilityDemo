@@ -1,0 +1,71 @@
+﻿@{
+	ViewBag.Title = "Formulario no accesible";
+}
+
+<h2>Formulario:</h2>
+<div class="form-group">
+	<div class="alert alert-danger" id="divFormMalError">
+		<p>Revisa los siguientes errores:</p>
+		<ul>
+			<li>El nombre es obligatorio</li>
+			<li>Los apellidos son obligatorios.</li>
+		</ul>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<span class="label">Nombre:</span>
+
+		</div>
+		<div class="col-md-6">
+			<input type="text" class="form-control glyphicon-asterisk" value="Juanjo" />
+		</div>
+	</div>
+	<div class="form-group">
+		<h3>Rango de edad:</h3>
+		<div class="row">
+			<div class="col-md-3">
+				<input type="radio" name="edad" id="edad1" />
+			</div>
+
+			<div class="col-md-9"><span class="label">Entre 10 y 20</span></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<input type="radio" name="edad" id="edad2" />
+			</div>
+
+			<div class="col-md-9"><span class="label">entre 20 y 30</span></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<input type="radio" name="edad" id="edad3" />
+			</div>
+
+			<div class="col-md-9"><span class="label">Entre 30 y 40</span></div>
+		</div>
+
+
+
+
+
+
+
+
+	</div>
+
+	<div class="row">
+		<div class="col-md-offset-6">
+			<input type="text" placeholder="Apellidos" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-offset-6">
+			<button class="btn btn-primary" id="btnSubmit">Enviar</button>
+		</div>
+	</div>
+</div>
+
+@section scripts
+{
+	@Scripts.Render("~/Scripts/forms-mal.js")
+}

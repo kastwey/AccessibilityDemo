@@ -1,0 +1,63 @@
+﻿@{
+	ViewBag.Title = "Lo que se ve no es lo que se escucha";
+}
+
+<h2>Lo que se ve no es lo que se escucha</h2>
+<div class="jumbotron">
+	<div id="main">
+		<span style="color:lightblue;" id="myBlue">Me</span>&nbsp;<span style="color:coral;" id="myRed">Hola.</span>&nbsp;<span style="color:pink;" id="myPink">Juanjo.</span>&nbsp;<span style="color:lightgreen;" id="myGreen">llamo</span>
+	</div>
+
+</div>
+@section styles
+{
+	<style>
+		#main {
+			width: 400px;
+			height: 150px;
+			border: 1px solid #c3c3c3;
+			display: -webkit-flex; /* Safari */
+			display: flex;
+		}
+
+			#main span {
+				width: 70px;
+				height: 70px;
+			}
+
+		/* Safari 6.1+ */
+		span#myRed {
+			-webkit-order: 1;
+		}
+
+		span#myBlue {
+			-webkit-order: 3;
+		}
+
+		span#myGreen {
+			-webkit-order: 4;
+		}
+
+		span#myPink {
+			-webkit-order: 2;
+		}
+
+		/* Standard syntax */
+		span#myRed {
+			order: 1;
+		}
+
+		span#myBlue {
+			order: 2;
+		}
+
+		span#myGreen {
+			order: 3;
+		}
+
+		span#myPink {
+			order: 4;
+		}
+	</style>
+
+}

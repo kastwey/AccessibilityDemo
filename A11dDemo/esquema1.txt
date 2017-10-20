@@ -1,0 +1,20 @@
+1. Presentación Sin diapositivas. Cuando leí que había que poner muchas imágenes...
+2. Cuántos han hecho programas de accesibilidad? manita! Mi aplicación.
+3. ¿Cómo me ayuda la tecnología? Ordenador, VS Studio, móvil
+4. ¿El día a día: GPS, luces de casa, colores, organizador de ropa. Aplicación guarde Eric
+5. ¿Por qué puedo usar estas aplicaciones? Porque son accesibles.
+6. ¿Cómo me manejo por una web? Explicar dom, teclado, listas de enlaces, formularios, ETC.
+7. Puntos importantes de accesibilidad:
+· Contraste de color
+· Al crecer, que no se rompa.
+8. ¿Cuán difícil es hacer aplicaciones accesibles hoy en día?
+· Se puede. La construcción de html puede ser accesible. Las herramientas generan html, js y css. es cuestión de adaptar.
+· CMS: drupal, wordpress, umbraco. Plantillas, e pueden cambiar y hacerlas accesibles. Cada vez más se está teniendo en cuenta.
+· javascript: Mantener foco o cambiarlo si toca. Foco en no focusables. Cambios de contenido. 
+· Angular.js, Angular 2, React, Polimer... Son javascript, y ángular es SPA, pero hay técnicas para hacerlas accesibles. Entramos en profundidad:
+
+9. Presentar el ejemplo angular accesible y explicar: movimiento del foco a encabezado al cambiar de página, mensajes de alerta con area, validación de formularios y va al error...
+10. ¿Es más caro? Contar primeros desarrollos, curva aprendizaje.
+11. Iportancia del open source y de la ayuda de la comunidad.
+12. Lo más importante: ¡testear! Muchos navegadors y lectores.
+13. Conclusión. Pregunta discapacidad. Captcha musical.

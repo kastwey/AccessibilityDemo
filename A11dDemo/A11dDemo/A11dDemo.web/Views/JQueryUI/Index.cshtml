@@ -1,0 +1,27 @@
+﻿
+@{
+	ViewBag.Title = "Arrastrar y soltar, con ratón y nada más";
+}
+
+<h2>Arrastrar y soltar, con ratón y nada más</h2>
+<div id="draggable" class="ui-widget-content">
+	<p>Arrástrame. ¡Si lo haces con teclado te hago un monumento!</p>
+</div>
+
+@section scripts
+{
+	@Scripts.Render("~/bundles/jqueryui")
+	@Scripts.Render("~/Scripts/drag.js")
+}
+@section styles
+	 {
+	@Styles.Render("~/Content/css/jqueryui")
+	<style>
+		#draggable {
+			width: 150px;
+			height: 150px;
+			padding: 0.5em;
+		}
+	</style>
+
+}

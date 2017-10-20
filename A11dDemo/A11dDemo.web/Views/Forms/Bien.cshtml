@@ -1,0 +1,64 @@
+﻿@{
+	ViewBag.Title = Resources.Forms.FormAccesible;
+}
+<div class="jumbotron">
+	<h2>@Resources.Forms.FormAccesible</h2>
+	<div class="form-group">
+		<div class="alert alert-danger" id="divFormMalError">
+			<h3><span role="status">@Resources.Forms.RevisarErrores</span></h3>
+			<ul>
+				<li>@Resources.Forms.NombreObligatorio</li>
+				<li>@Resources.Forms.ApellidosObligatorios</li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<label for="txtNombre" >@Resources.Forms.LblNombre</label>
+			</div>
+			<div class="col-md-6">
+				<input type="text" class="form-control glyphicon-asterisk" id="txtNombre" value="Juanjo" aria-required="true" required />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<label for="txtApellidos" >@Resources.Forms.LblApellidos</label>
+			</div>
+			<div class="col-md-6">
+				<input type="text" class="form-control glyphicon-asterisk" id="txtApellidos" aria-required="true" required />
+			</div>
+		</div>
+		<div class="form-group" role="radiogroup" aria-labelledby="groupEdad">
+			<h3 id="groupEdad">@Resources.Forms.RangoEdad</h3>
+			<div class="row">
+				<div class="col-md-3">
+					<input type="radio" name="edad" id="edad1" />
+				</div>
+				<div class="col-md-9"><label  for="edad1">@Resources.Forms.DiezVeinte</label></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<input type="radio" name="edad" id="edad2" />
+				</div>
+
+				<div class="col-md-9"><label  for="edad2">@Resources.Forms.VeinteTreinta</label></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<input type="radio" name="edad" id="edad3" />
+				</div>
+
+				<div class="col-md-9"><label  for="edad3">@Resources.Forms.TreintaCuarenta</label></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-6">
+				<button class="btn btn-primary" id="btnSubmit">@Resources.Forms.Enviar</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+@section Scripts
+{
+@Scripts.Render("~/Scripts/forms-bien.js")
+}

@@ -1,0 +1,38 @@
+﻿@{
+	ViewBag.Title = Resources.Home.Inicio;
+}
+<h2>@Resources.Home.Demostraciones</h2>
+<nav>
+	<ul class="list-group">
+		<li class="list-group-item">
+			@Resources.Home.Estructura
+			<ul class="list-group">
+				<li class="list-group-item">@Html.ActionLink(Resources.Home.SinEstructura, MVC.Estructura.SinEstructura())</li>
+				<li class="list-group-item">@Html.ActionLink(Resources.Home.ConEstructura, MVC.Estructura.ConEstructura())</li>
+				<li class="list-group-item"><a target="_blank" class="glyphicon-new-window" href="https://www.just-eat.es/restaurants-croquetaypresumida/menu">@Resources.Home.Justeat<span class="sr-only">, @Resources.Home.AbreVentanaNueva</span></a></li>
+			</ul>
+		</li>
+		<li><a target="_blank" class="glyphicon-new-window" href="http://www.cocacola.es">2. @Resources.Home.ImagenesSinEtiquetar<span class="sr-only">, @Resources.Home.AbreVentanaNueva</span></a></li>
+		<li>
+			@Resources.Home.Formularios
+			<ul>
+				<li>@Html.ActionLink(@Resources.Home.FormularioNoAccesible, MVC.Forms.Mal())</li>
+				<li>@Html.ActionLink(@Resources.Home.FormularioAccesible, MVC.Forms.Bien())</li>
+			</ul>
+		</li>
+		<li>
+			@Resources.Home.DivsParaTodo
+			<ul>
+				<li class="list-group-item">@Html.ActionLink(Resources.Home.EnlacesYBotones, MVC.SinSemantica.Index())</li>
+				<li class="list-group-item">@Html.ActionLink(Resources.Home.DivsTuneados, MVC.SinSemantica.AlternativaTuneada())</li>
+			</ul>
+		</li>
+		<li class="list-group-item">@Html.ActionLink(Resources.Home.ArrastrarYSoltar, MVC.JQueryUI.Index())</li>
+		<li class="list-group-item"><a class="glyphicon-new-window" target="_blank" href="https://www.lacaixa.es">@Resources.Home.CaixaBank<span class="sr-only">. Abre en ventana nueva</span></a></li>
+		<li class="list-group-item">@Html.ActionLink(Resources.Home.Ruido, MVC.Multimedia.Index())</li>
+		<li class="list-group-item">@Html.ActionLink(Resources.Home.EnlacesSorpresa, MVC.Enlaces.Index())</li>
+		<li class="list-group-item">@Html.ActionLink(Resources.Home.VerYEscuchar, MVC.Interfaces.VisualYDOM())</li>
+		<li class="list-group-item">@Html.ActionLink(Resources.Home.VerYEscucharRevival, MVC.Interfaces.VisualYDom2())</li>
+		<li class="list-group-item">@Html.ActionLink(Resources.Home.Mienteme, MVC.Interfaces.Mienteme())</li>
+	</ul>
+</nav>

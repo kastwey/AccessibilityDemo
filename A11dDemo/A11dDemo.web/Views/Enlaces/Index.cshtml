@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = Resources.Enlaces.Titulo;
+}
+
+<h2>@Resources.Enlaces.Titulo</h2>
+<p>@Html.Raw(String.Format(Resources.Enlaces.PaginaPeligrosa, "<a class=\"danger\" href=\"#\">" + Resources.Enlaces.ClickAqui + "</a>"))</p>
+@section scripts
+{
+	@Scripts.Render("~/Scripts/enlaces.js")
+}

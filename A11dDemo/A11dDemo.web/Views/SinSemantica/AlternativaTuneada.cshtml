@@ -1,0 +1,28 @@
+﻿@{
+	ViewBag.Title = Resources.Semantica.ControlesTuneados;
+}
+<div class="jumbotron">
+	<h2>@Resources.Semantica.ControlesTuneados</h2>
+	<ul class="list-group">
+		<li><div class="btn-link" id="lnkItem1" role="link" tabindex="0">@Resources.Semantica.Item1</div></li>
+		<li><div class="btn-link" id="lnkItem2" role="link" tabindex="0">@Resources.Semantica.Item2</div></li>
+		<li><div class="btn-link" id="lnkItem3" role="link" tabindex="0">@Resources.Semantica.Item3</div></li>
+	</ul>
+</div>
+<div class="form-group">
+	<div class="row">
+		<div class="col-md-6">
+			<label  for="txtNombre">@Resources.Semantica.LblNombre</label>
+		</div>
+		<div class="col-md-6">
+			<input id="txtNombre" type="text" />
+		</div>
+		<div class="col-md-offset-6">
+			<div class="btn btn-primary" id="btnEnviar" role="button" tabindex="0">@Resources.Semantica.Enviar</div>
+		</div>
+	</div>
+</div>
+@section scripts
+{
+	@Scripts.Render("~/Scripts/sinSemantica.js")
+}

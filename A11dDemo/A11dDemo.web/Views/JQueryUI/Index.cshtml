@@ -1,0 +1,27 @@
+﻿
+@{
+	ViewBag.Title = Resources.Scripts.ArrastrarSoltar;
+}
+
+<h2>@Resources.Scripts.ArrastrarSoltar</h2>
+<div id="draggable" class="ui-widget-content">
+	<p>@Resources.Scripts.Arrastrame</p>
+</div>
+
+@section scripts
+{
+	@Scripts.Render("~/bundles/jqueryui")
+	@Scripts.Render("~/Scripts/drag.js")
+}
+@section styles
+	 {
+	@Styles.Render("~/Content/css/jqueryui")
+	<style>
+		#draggable {
+			width: 150px;
+			height: 150px;
+			padding: 0.5em;
+		}
+	</style>
+
+}

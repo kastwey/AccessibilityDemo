@@ -1,0 +1,33 @@
+﻿@using A11dDemo.web.Models;
+@using System.Text;
+@model List<A11dDemo.web.Models.MenusModel>
+@{
+}
+<p>El menú</p>
+<ul>
+	@foreach (var item in Model)
+	{
+		@PaintMenuItem(item)
+	}
+</ul>
+
+@functions
+{
+
+	private MvcHtmlString PaintMenuItem(MenusModel menuItem, int level = 1)
+	{
+		StringBuilder strb = new StringBuilder();
+		strb.AppendLine($"<li data-level=\"{level}\">{menuItem.Name}");
+		if (menuItem.Items != null && menuItem.Items.Any())
+		{
+			strb.AppendLine($"<ul data-level=\"{level}\">");
+			foreach (var item in menuItem.Items)
+			{
+				strb.Append(PaintMenuItem(item, level + 1).ToHtmlString());
+			}
+			strb.AppendLine("</ul>");
+		}
+		strb.AppendLine("</li>");
+		return new MvcHtmlString( strb.ToString());
+	}
+}

@@ -165,6 +165,15 @@
   <data name="Github" xml:space="preserve">
     <value>Github:</value>
   </data>
+  <data name="Idioma" xml:space="preserve">
+    <value>Marcado de idioma</value>
+  </data>
+  <data name="IdiomaBien" xml:space="preserve">
+    <value>Idioma bien marcado</value>
+  </data>
+  <data name="IdiomaMal" xml:space="preserve">
+    <value>Idioma mal marcado</value>
+  </data>
   <data name="ImagenesSinEtiquetar" xml:space="preserve">
     <value>Imágenes sin etiquetar</value>
   </data>
@@ -173,6 +182,15 @@
   </data>
   <data name="Justeat" xml:space="preserve">
     <value>Ejemplo de web con buena estructura (justeat)</value>
+  </data>
+  <data name="MenusBien" xml:space="preserve">
+    <value>Menús desplegables con teclado</value>
+  </data>
+  <data name="MenusMal" xml:space="preserve">
+    <value>Menús no desplegables con teclado</value>
+  </data>
+  <data name="Menús" xml:space="preserve">
+    <value>Menús</value>
   </data>
   <data name="Mienteme" xml:space="preserve">
     <value>¡Miénteme!</value>

@@ -1,0 +1,13 @@
+﻿@model A11dDemo.web.Models.MenusModel
+@{
+	ViewBag.Title = Resources.Menus.TituloInaccesible;
+}
+
+<h2>@Resources.Menus.TituloInaccesible</h2>
+
+@Html.Partial("_Menu", Model.Items)
+
+@section scripts
+{
+	<script type="text/javascript" src="~/Scripts/menus_mouse.js"></script>
+}

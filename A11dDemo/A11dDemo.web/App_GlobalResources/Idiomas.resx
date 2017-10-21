@@ -117,13 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="EnlaceHome" xml:space="preserve">
-    <value>Demo Accesibilidad</value>
+  <data name="TextoCastellano" xml:space="preserve">
+    <value>Este es un texto que el lector de pantallas lee con acento inglés, porque el idioma de la página está mal marcado.</value>
   </data>
-  <data name="PiePagina" xml:space="preserve">
-    <value>Demo Accesibilidad</value>
+  <data name="TextoIngles" xml:space="preserve">
+    <value>dependency injection</value>
   </data>
-  <data name="Title" xml:space="preserve">
-    <value>{0} - Demo Accesibilidad</value>
+  <data name="TextoPalabrasIngles" xml:space="preserve">
+    <value>Un patrón muy utilizado es el patrón de inyección de dependencia, en inglés llamado ({0}).</value>
+  </data>
+  <data name="TituloBien" xml:space="preserve">
+    <value>Idioma de la página bien marcado</value>
+  </data>
+  <data name="TituloMal" xml:space="preserve">
+    <value>Idioma de la página mal ajustado</value>
   </data>
 </root>

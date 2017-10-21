@@ -31,8 +31,10 @@ public static partial class MVC
     public static A11dDemo.web.Controllers.EstructuraController Estructura = new A11dDemo.web.Controllers.T4MVC_EstructuraController();
     public static A11dDemo.web.Controllers.FormsController Forms = new A11dDemo.web.Controllers.T4MVC_FormsController();
     public static A11dDemo.web.Controllers.HomeController Home = new A11dDemo.web.Controllers.T4MVC_HomeController();
+    public static A11dDemo.web.Controllers.IdiomaController Idioma = new A11dDemo.web.Controllers.T4MVC_IdiomaController();
     public static A11dDemo.web.Controllers.InterfacesController Interfaces = new A11dDemo.web.Controllers.T4MVC_InterfacesController();
     public static A11dDemo.web.Controllers.JQueryUIController JQueryUI = new A11dDemo.web.Controllers.T4MVC_JQueryUIController();
+    public static A11dDemo.web.Controllers.MenusController Menus = new A11dDemo.web.Controllers.T4MVC_MenusController();
     public static A11dDemo.web.Controllers.MultimediaController Multimedia = new A11dDemo.web.Controllers.T4MVC_MultimediaController();
     public static FrontFest.ResourcesController Resources = new FrontFest.T4MVC_ResourcesController();
     public static A11dDemo.web.Controllers.SinSemanticaController SinSemantica = new A11dDemo.web.Controllers.T4MVC_SinSemanticaController();
@@ -113,6 +115,8 @@ namespace Links
         public static readonly string jquery_validate_min_js = Url("jquery.validate.min.js");
         public static readonly string jquery_validate_unobtrusive_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/jquery.validate.unobtrusive.min.js") ? Url("jquery.validate.unobtrusive.min.js") : Url("jquery.validate.unobtrusive.js");
         public static readonly string jquery_validate_unobtrusive_min_js = Url("jquery.validate.unobtrusive.min.js");
+        public static readonly string menus_keyboard_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/menus_keyboard.min.js") ? Url("menus_keyboard.min.js") : Url("menus_keyboard.js");
+        public static readonly string menus_mouse_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/menus_mouse.min.js") ? Url("menus_mouse.min.js") : Url("menus_mouse.js");
         public static readonly string modernizr_2_8_3_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/modernizr-2.8.3.min.js") ? Url("modernizr-2.8.3.min.js") : Url("modernizr-2.8.3.js");
         public static readonly string respond_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/respond.min.js") ? Url("respond.min.js") : Url("respond.js");
         public static readonly string respond_matchmedia_addListener_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/respond.matchmedia.addListener.min.js") ? Url("respond.matchmedia.addListener.min.js") : Url("respond.matchmedia.addListener.js");
@@ -226,6 +230,8 @@ namespace Links
                 public const string jquery_validate_min_js = "~/Scripts/jquery.validate.min.js"; 
                 public const string jquery_validate_unobtrusive_js = "~/Scripts/jquery.validate.unobtrusive.js"; 
                 public const string jquery_validate_unobtrusive_min_js = "~/Scripts/jquery.validate.unobtrusive.min.js"; 
+                public const string menus_keyboard_js = "~/Scripts/menus_keyboard.js"; 
+                public const string menus_mouse_js = "~/Scripts/menus_mouse.js"; 
                 public const string modernizr_2_8_3_js = "~/Scripts/modernizr-2.8.3.js"; 
                 public const string respond_js = "~/Scripts/respond.js"; 
                 public const string respond_matchmedia_addListener_js = "~/Scripts/respond.matchmedia.addListener.js"; 

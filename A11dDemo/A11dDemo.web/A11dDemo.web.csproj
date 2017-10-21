@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -171,6 +172,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Home.resx</DependentUpon>
     </Compile>
+    <Compile Include="App_GlobalResources\Idiomas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Idiomas.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_GlobalResources\Interfaz.en.designer.cs">
       <DependentUpon>Interfaz.en.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -200,6 +206,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Layout.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Menus.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Menus.resx</DependentUpon>
     </Compile>
     <Compile Include="App_GlobalResources\multimedia.en.designer.cs">
       <DependentUpon>multimedia.en.resx</DependentUpon>
@@ -239,8 +250,10 @@
     <Compile Include="Controllers\EstructuraController.cs" />
     <Compile Include="Controllers\FormsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IdiomaController.cs" />
     <Compile Include="Controllers\InterfacesController.cs" />
     <Compile Include="Controllers\JQueryUIController.cs" />
+    <Compile Include="Controllers\MenusController.cs" />
     <Compile Include="Controllers\MultimediaController.cs" />
     <Compile Include="Controllers\ResourcesController.cs" />
     <Compile Include="Controllers\SinSemanticaController.cs" />
@@ -259,12 +272,19 @@
     <Compile Include="HomeController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
+    <Compile Include="IdiomaController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
     <Compile Include="InterfacesController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
     <Compile Include="JQueryUIController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
+    <Compile Include="MenusController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MenusModel.cs" />
     <Compile Include="MultimediaController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
@@ -361,6 +381,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\menus_keyboard.js" />
+    <Content Include="Scripts\menus_mouse.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
@@ -400,10 +422,14 @@
     <Content Include="Views\Interfaces\VisualYDom2.cshtml" />
     <Content Include="Views\Interfaces\Mienteme.cshtml" />
     <Content Include="Views\Home\Contacto.cshtml" />
+    <Content Include="Views\Menus\MenuBien.cshtml" />
+    <Content Include="Views\Menus\_Menu.cshtml" />
+    <Content Include="Views\Menus\MenuMal.cshtml" />
+    <Content Include="Views\Idioma\IdiomaMal.cshtml" />
+    <Content Include="Views\Idioma\IdiomaBien.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -532,6 +558,18 @@
     <Content Include="App_GlobalResources\Semantica.en.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Semantica.en.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Menus.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Menus.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Idiomas.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Idiomas.Designer.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <PropertyGroup>

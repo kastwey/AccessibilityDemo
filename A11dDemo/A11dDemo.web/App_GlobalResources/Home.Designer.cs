@@ -205,6 +205,33 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Marcado de idioma.
+        /// </summary>
+        internal static string Idioma {
+            get {
+                return ResourceManager.GetString("Idioma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Idioma bien marcado.
+        /// </summary>
+        internal static string IdiomaBien {
+            get {
+                return ResourceManager.GetString("IdiomaBien", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Idioma mal marcado.
+        /// </summary>
+        internal static string IdiomaMal {
+            get {
+                return ResourceManager.GetString("IdiomaMal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Imágenes sin etiquetar.
         /// </summary>
         internal static string ImagenesSinEtiquetar {
@@ -228,6 +255,33 @@ namespace Resources {
         internal static string Justeat {
             get {
                 return ResourceManager.GetString("Justeat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menús desplegables con teclado.
+        /// </summary>
+        internal static string MenusBien {
+            get {
+                return ResourceManager.GetString("MenusBien", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menús no desplegables con teclado.
+        /// </summary>
+        internal static string MenusMal {
+            get {
+                return ResourceManager.GetString("MenusMal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menús.
+        /// </summary>
+        internal static string Menús {
+            get {
+                return ResourceManager.GetString("Menús", resourceCulture);
             }
         }
         

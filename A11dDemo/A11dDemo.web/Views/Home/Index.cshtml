@@ -10,18 +10,18 @@
 				<li class="list-group-item">@Html.ActionLink(Resources.Home.SinEstructura, MVC.Estructura.SinEstructura())</li>
 				<li class="list-group-item">@Html.ActionLink(Resources.Home.ConEstructura, MVC.Estructura.ConEstructura())</li>
 				<li class="list-group-item">
-                    <a target="_blank" href="https://www.just-eat.es/restaurants-croquetaypresumida/menu">
-                        @Resources.Home.Justeat
-                        <span class="sr-only">, @Resources.Home.AbreVentanaNueva</span>
-                    </a>
-                    <span class="glyphicon glyphicon-link"></span>
-                </li>
+					<a target="_blank" href="https://www.just-eat.es/restaurants-croquetaypresumida/menu">
+						@Resources.Home.Justeat
+						<span class="sr-only">, @Resources.Home.AbreVentanaNueva</span>
+					</a>
+					<span class="glyphicon glyphicon-link"></span>
+				</li>
 			</ul>
 		</li>
 		<li class="list-group-item">
-            <a target="_blank" href="http://www.cocacola.es">@Resources.Home.ImagenesSinEtiquetar<span class="sr-only">, @Resources.Home.AbreVentanaNueva</span></a>
-            <span class="glyphicon glyphicon-link"></span>
-        </li>
+			<a target="_blank" href="http://www.cocacola.es">@Resources.Home.ImagenesSinEtiquetar<span class="sr-only">, @Resources.Home.AbreVentanaNueva</span></a>
+			<span class="glyphicon glyphicon-link"></span>
+		</li>
 		<li class="list-group-item">
 			@Resources.Home.Formularios
 			<ul>
@@ -36,15 +36,30 @@
 				<li class="list-group-item">@Html.ActionLink(Resources.Home.DivsTuneados, MVC.SinSemantica.AlternativaTuneada())</li>
 			</ul>
 		</li>
-		<li class="list-group-item">@Html.ActionLink(Resources.Home.ArrastrarYSoltar, MVC.JQueryUI.Index())</li>
-		<li class="list-group-item"><a target="_blank" href="https://www.lacaixa.es">@Resources.Home.CaixaBank<span class="sr-only">. Abre en ventana nueva</span></a>
-            <span class="glyphicon glyphicon-link"></span>
-        </li>
-		<li class="list-group-item">@Html.ActionLink(Resources.Home.Ruido, MVC.Multimedia.Index())</li>
-		<li class="list-group-item">@Html.ActionLink(Resources.Home.EnlacesSorpresa, MVC.Enlaces.Index())</li>
-		<li class="list-group-item">@Html.ActionLink(Resources.Home.VerYEscuchar, MVC.Interfaces.VisualYDOM())</li>
-		<li class="list-group-item">@Html.ActionLink(Resources.Home.VerYEscucharRevival, MVC.Interfaces.VisualYDom2())</li>
-		<li class="list-group-item">@Html.ActionLink(Resources.Home.Mienteme, MVC.Interfaces.Mienteme())</li>
-		<li class="list-group-item">@Html.ActionLink(Resources.Home.Contacto, MVC.Home.Contacto())</li>
-	</ul>
+		<li class="list-group-item">
+			@Resources.Home.Idioma
+			<ul class="list-group">
+				<li class="list-group-item">@Html.ActionLink(Resources.Home.IdiomaMal, MVC.Idioma.IdiomaMal())</li>
+				<li class="list-group-item">@Html.ActionLink(Resources.Home.IdiomaBien, MVC.Idioma.IdiomaBien())</li>
+			</ul>
+		</li>
+		<li class="list-group-item">
+			@Resources.Home.Menús
+		<ul class="list-group">
+			<li class="list-group-item">@Html.ActionLink(Resources.Home.MenusMal, MVC.Menus.MenuMal())</li>
+			<li class="list-group-item">@Html.ActionLink(Resources.Home.MenusBien, MVC.Menus.MenuBien())</li>
+		</ul>
+	</li>
+	<li class="list-group-item">@Html.ActionLink(Resources.Home.ArrastrarYSoltar, MVC.JQueryUI.Index())</li>
+	<li class="list-group-item">
+		<a target="_blank" href="https://www.lacaixa.es">@Resources.Home.CaixaBank<span class="sr-only">. Abre en ventana nueva</span></a>
+		<span class="glyphicon glyphicon-link"></span>
+	</li>
+	<li class="list-group-item">@Html.ActionLink(Resources.Home.Ruido, MVC.Multimedia.Index())</li>
+	<li class="list-group-item">@Html.ActionLink(Resources.Home.EnlacesSorpresa, MVC.Enlaces.Index())</li>
+	<li class="list-group-item">@Html.ActionLink(Resources.Home.VerYEscuchar, MVC.Interfaces.VisualYDOM())</li>
+	<li class="list-group-item">@Html.ActionLink(Resources.Home.VerYEscucharRevival, MVC.Interfaces.VisualYDom2())</li>
+	<li class="list-group-item">@Html.ActionLink(Resources.Home.Mienteme, MVC.Interfaces.Mienteme())</li>
+	<li class="list-group-item">@Html.ActionLink(Resources.Home.Contacto, MVC.Home.Contacto())</li>
+</ul>
 </nav>

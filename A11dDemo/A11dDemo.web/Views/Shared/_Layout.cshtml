@@ -1,5 +1,8 @@
-﻿<!DOCTYPE html>
-<html>
+﻿@{
+	var idioma = ViewData.ContainsKey("forceLanguage") ? ViewData["forceLanguage"] : "es";
+}
+<!DOCTYPE html lang="@idioma">
+<html lang="@idioma">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
